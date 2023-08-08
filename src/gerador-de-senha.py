@@ -1,19 +1,22 @@
 import random
 
-print("Bem vindo ao gerador de senha")
+chars ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%¨&*()-="
 
-chars = 'abcdefghjiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*()_+'
+print("=============BEM VINDO AO GERADOR DE SENHAS=============")
 
-numero = input('quantas senhas você vai querer: ')
+numero = input("Digite o numero de senhas que você vai querer:")
 numero = int(numero)
 
 tamanho = input("Digite o tamanho da senha: ")
 tamanho = int(tamanho)
 
-print('\nAqui está sua senha: ')
+print('\nAqui está a sua senha: ')
 
 for snh in range(numero):
     senha = ''
     for c in range(tamanho):
         senha += random.choice(chars)
+    print('========================================================')
     print(senha)
+    print("========================================================")
+
