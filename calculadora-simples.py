@@ -1,0 +1,63 @@
+import textwrap
+
+
+def menu():
+    menu = """Selecione uma opção
+    [1] Adição
+    [2] subtração
+    [3] multiplicação
+    [4] divisão
+    [5] Sair
+    Comando => """
+
+    return input(textwrap.dedent(menu))
+
+
+def adicao():
+    x = int(input("Digite o primeiro número: "))
+    y = int(input("Digite o segundo número: "))
+    print("soma = ", x + y)
+
+
+def subtracao():
+    x = int(input("Digite o primeiro número: "))
+    y = int(input("Digite o segundo número: "))
+    print("subtração = ", x - y)
+
+
+def multiplicacao():
+    x = int(input("Digite o primeiro número: "))
+    y = int(input("Digite o segundo número: "))
+    print("multiplicação = ", x * y)
+
+
+def divisao():
+    x = int(input("Digite o primeiro número: "))
+    y = int(input("Digite o segundo número: "))
+    print("divisão = ", x / y)
+
+
+def main():
+
+    while True:
+        opcao = menu().lower()
+
+        if opcao == '1':
+            adicao()
+
+        elif opcao == '2':
+            subtracao()
+
+        elif opcao == '3':
+            divisao()
+        elif opcao == '4':
+
+            multiplicacao()
+        elif opcao == '5':
+            break
+
+        else:
+            print("Digite uma opção válida")
+
+
+main()
