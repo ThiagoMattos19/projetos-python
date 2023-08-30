@@ -10,7 +10,7 @@ def menu():
     [5] potenciação
     [6] Sair
     Comando => """
-    
+
     return input(textwrap.dedent(menu))
 
 
@@ -37,11 +37,11 @@ def divisao():
     y = int(input("Digite o segundo número: "))
     print("divisão = ", x / y)
 
+
 def potenciacao():
     x = int(input("Digite o primeiro número: "))
     y = int(input("Digite o segundo número: "))
     print("potencia = ", x ** y)
-
 
 
 def main():
@@ -56,9 +56,10 @@ def main():
             subtracao()
 
         elif opcao == '3':
-            divisao()
-        elif opcao == '4':
             multiplicacao()
+
+        elif opcao == '4':
+            divisao()
 
         elif opcao == '5':
             potenciacao()
