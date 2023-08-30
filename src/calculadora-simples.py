@@ -10,7 +10,7 @@ def menu():
     [5] potenciação
     [6] Sair
     Comando => """
-
+    
     return input(textwrap.dedent(menu))
 
 
